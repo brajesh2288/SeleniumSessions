@@ -77,7 +77,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 				//for links: custom xpath:
 				//all the links are represented by <a> html tag:
 				
-		
+		driver.quit();
 
 	}
 
