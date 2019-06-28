@@ -31,13 +31,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 				//absolute xpath: not recommended
 				//*[@id='headersearchbar']/div/div[2]/table/tbody/tr/td[2]/input
-				//1. performance issue
+				//1. performance issue    pass
 				//2. not reliable
 				//3. can be changed at any time in future
 				
 				//driver.findElement(By.xpath("//input[@class='actextbox']")).sendKeys("Java");
 				
 				driver.findElement(By.xpath("//input[@name='userid']")).sendKeys("Java");
+				driver.findElement(By.xpath("//input[@name='pass']")).sendKeys("brajesh");
 				
 				//driver.findElement(By.xpath("//input[contains(@class,'actextbox')]")).sendKeys("Java");
 				
@@ -61,6 +62,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 				
 				//for links: custom xpath:
 				//all the links are represented by <a> html tag:
+				
 		
 
 	}
