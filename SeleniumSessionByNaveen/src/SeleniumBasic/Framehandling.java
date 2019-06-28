@@ -31,7 +31,9 @@ public class Framehandling {
 		
 		driver.findElement(By.xpath("//a[contains(text(),'Contacts')]")).click();	
 		System.out.println("Contact page is Clicked Now");
+		driver.switchTo().defaultContent();
 		driver.close();
+		
 		System.out.println("Driver is Closed Now");
 	}
 
