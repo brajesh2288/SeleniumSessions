@@ -39,7 +39,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 				
 				driver.findElement(By.xpath("//input[@name='userid']")).sendKeys("Java");
 				driver.findElement(By.xpath("//input[@name='pass']")).sendKeys("brajesh");
+				driver.findElement(By.xpath("//*[@id='sgnBt']")).click();
 				
+				String str= driver.findElement(By.xpath("//*[@id='errf']")).getText();
+			String	str2="Oops, that's not a match.";
+				if(str.equals(str2))
+						{
+					  System.out.println("Id& paasword is not vaild ");
+						}
+				else
+				{
+					System.out.println("Sucessful login ");
+				}
+				
+				
+				// 
 				//driver.findElement(By.xpath("//input[contains(@class,'actextbox')]")).sendKeys("Java");
 				
 				//dynamic id: input
